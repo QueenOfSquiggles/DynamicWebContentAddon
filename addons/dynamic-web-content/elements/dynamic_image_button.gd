@@ -30,6 +30,7 @@ func _ready() -> void:
 	vbox.add_child(button)
 	subtitle = Label.new()
 	subtitle.text = "unloaded"
+	subtitle.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	vbox.add_child(subtitle)
 	
 	if placeholder_image:
